@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<section id="grid-container">
+  
+    <header id="desktop-header">
+      <img src="images/bg-main-mobile.png" alt="bg-main-mobile">
+      <img id="bg-card-back" src="images/bg-card-back.png" alt="bg-card-back">
+      <img id="bg-card-front" src="images/bg-card-front.png" alt="bg-card-front">
+      <img id="card-logo" src="images/card-logo.svg" alt="card-logo">
+      <h1 id="cnum-real-time">0000 0000 0000 0000</h1>
+      <h1 id="cname-real-time">Jane Appleseed</h1>
+      <h1 id="cdate-real-time">00/00</h1>
+      <h1 id="cvv-real-time">000</h1>
+    </header>
+
+    <header id="mobile-header">
+      <img id="imgtest" src="images/bg-main-mobile.png" alt="bg-main-desktop" width="30%" height="100%">
+      <img id="bg-card-back" src="images/bg-card-back.png" alt="bg-card-back">
+      <img id="bg-card-front" src="images/bg-card-front.png" alt="bg-card-front">
+      <img id="card-logo" src="images/card-logo.svg" alt="card-logo">
+      <h1 id="cnum-real-time">0000 0000 0000 0000</h1>
+      <h1 id="cname-real-time">Jane Appleseed</h1>
+      <h1 id="cdate-real-time">00/00</h1>
+      <h1 id="cvv-real-time">000</h1>
+    </header>
+  
+    <main>
+      <label for="">Cardholder Name</label>
+      <input type="text" placeholder="e.g. Jane Appleseed">
+  
+      <label for="">Card Number</label>
+      <input type="number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+  
+      <div id="flex-box">
+  
+        <div id="item1">
+          <label for="">Exp. Date (MM/YY)</label>
+          <div id="item1-child">
+            <input id="month" type="number" placeholder="MM" maxlength="2">
+            <input id="year" type="number" placeholder="YY" maxlength="2">
+          </div>
+        </div>
+  
+        <div id="item2">
+          <label for="cvv">CVC</label>
+          <input id="cvv" type="text" placeholder="e.g. 123" maxlength="3">
+        </div>
+  
+      </div>
+  
+      <button id="confirm">Confirm</button>
+    </main>
+</section>
+
+  <!-- Completed state start -->
+
+  <!-- <section>
+    Thank you!
+    We've added your card details
+    Continue
+  </section> -->
+  
+</body>
+</html>
